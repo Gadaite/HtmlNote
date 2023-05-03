@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接跳转锚点</title>
+</head>
+<body>
+
+    <!-- 方式1 通过两个a标签进行锚点：通过指定name，再通过使用#name的方式跳转-->
+    <a href="#method1">方式一:跳转到最后一张图</a>
+
+    <!-- 方式2 通过标签的id属性进行跳转-->
+    <a href="#lyp01">方式二:跳转到倒数第3张图</a>
+
+
+    <p>pictuere1</p>
+    <img width="300" height="400" src="../picture/LYP2022120501.png">
+
+    <p>pictuere2</p>
+    <img width="300" height="400" src="../picture/LYP2022120502.png">
+    
+    <p id="lyp01">pictuere3</p>
+    <img width="300" height="400" src="../picture/LYP2022120503.png">
+    
+    
+    <p >pictuere4</p>
+    <img width="300" height="400" src="../picture/LYP2023010401.jpg">
+    
+    <a name="method1"></a>
+    <p>pictuere5</p>
+    <img width="300" height="400" src="../picture/LYP2023010402.jpg">
+
+
+    <a href="#">回到顶部</a>
+    <!-- 刷新页面的效果也会回到顶部-->
+    <a href="">刷新页面</a>
+</body>
+</html>

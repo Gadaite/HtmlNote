@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式优先级</title>
+    <link rel="stylesheet" href="./cssCollect/02-Position.css">
+    <style>
+        h1{
+            color: aquamarine;
+            color: blueviolet;
+            size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!--行内的优先级最高，内部样式和外部样式优先级一样，和顺序有关，不同样式中先定义的生效，相同样式中后定义的生效-->
+    <!--当不冲突的时候,按照优先级获取即可-->
+    <!--当不冲突的时候,按照优先级获取即可-->
+    <h1 style="color: bisque; size: 400px;">qwer</h1>
+</body>
+</html>

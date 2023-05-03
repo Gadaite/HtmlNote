@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单及控件</title>
+</head>
+<body>
+    <form action="https://www.baidu.com/s" target="_self" method="get">
+        <input type="text" name="wd">
+        <button>百度搜索</button>
+    </form>
+
+    <form action="https://search.jd.com/search" target="_blank" method="get">
+        <input type="text" name="keyword">
+        <button>京东搜索</button>
+    </form>
+    
+    <hr>
+    <form action="https://search.jd.com/search" target="_blank" method="get">
+        <!--文本框-->
+        账户:<input type="text" name="account" maxlength="10"><br>
+        <!--密码框 默认值标注checked-->
+        密码:<input type="password" name="pwd" value=""><br>
+        <!--单选框 默认值标注checked-->
+        性别:<input type="radio" name="gender" value="male">男
+             <input type="radio" name="gender" value="female" checked>女<br>
+        <!--复选框-->
+        爱好:<input type="checkbox" name="hobby" value="抽烟" checked>抽烟
+             <input type="checkbox" name="hobby" value="喝酒">喝酒
+             <input type="checkbox" name="hobby" value="打牌">打牌
+        <!--隐藏域-->
+        <input type="hidden" name="token" value="token_value"><br>
+        <!--文本域-->
+        其他:<textarea name="other" cols="23" rows="3"></textarea><br>
+        <!--下拉框 默认值标注selected-->
+        籍贯:<select name="place">
+            <option value="sicuan">四川</option>
+            <option value="chengdu">成都</option>
+            <option value="hunan" selected>湖南</option>
+            <option value="guizhou">贵州</option>
+            <option value="xian">西安</option>
+        </select>
+        <div>
+            <!--提交默认button的type就是submit-->
+            <button type="submit">京东搜索</button>
+            <input type="submit" value="京东搜索">
+        </div>
+        <div>
+            <!--重置-->
+            <button type="reset">重置输入</button>
+            <input type="reset" value="重置输入">
+        </div>
+        <!--普通按钮-->
+        <div>
+            <button type="button">判断是否注册</button><br>
+            <input type="button" value="判断是否注册">
+        </div>      
+    </form>
+</body>
+</html>
